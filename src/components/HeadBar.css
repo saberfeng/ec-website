@@ -1,0 +1,26 @@
+.normal{
+    z-index: 900;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+}
+.click_pro{
+    z-index: 900;
+    width: 2.3%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.address_input{
+    z-index: 900;
+    position: absolute;
+    top: 6px;
+    width: 180px;
+    height: 25px;
+    background: #000;
+    opacity: .47;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #fff;
+    left:130px;
+}
