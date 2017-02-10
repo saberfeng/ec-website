@@ -1,13 +1,34 @@
 .normal {
-
+    z-index: 900;
+    position: fixed;
+    /* border-top: 1px solid #d9d9d9; */
+    height: 50px;
+    /* background-color: #eee; */
+    bottom: 0px;
+    width: 100%;
+    box-shadow: none !important;
+    z-index: 600;    
 }
 
 .cart_bar{
-
+    position: absolute;
+    width: 208px;
+    height: 40px;
+    background-color: #000000;
+    z-index: 600;
+    bottom: 0;
+    right: 11px;
+    border-radius: 20px;
+    opacity: .45;
 }
 .total_fee{
 
 }
 .delivery_fee{
     
+}
+.cart{
+    z-index:900;
+    position:absolute;
+    right:10px;
 }

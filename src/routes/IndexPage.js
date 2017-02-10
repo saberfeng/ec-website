@@ -9,18 +9,22 @@ import { Carousel } from 'antd';
 function IndexPage({items, carousel}) {
 
   const slides = carousel.map(slide => {
-    return <div key={slide.id}><img className={styles.carousel} src={slide.photoSrc} /></div>
+    return <div key={slide.id}><img className={styles.slide} src={slide.photoSrc} /></div>
   });
 
   return (
     <div className={styles.normal}>
-      {slides.length ? <Carousel autoplay>{slides}</Carousel> : null}
+      <div className={styles.carousel_container}>
+        {slides.length ? <Carousel autoplay>{slides}</Carousel> : null}
+      </div>
       <div className={styles.product_title}>
         <span className={styles.rxdp}>热销单品</span>
       </div>
-      <HeadBar />
-      <ItemList items={items} />
-      <FootBar />
+      <div className={styles.wrapper}>
+        <HeadBar />
+        <ItemList items={items} />
+        <FootBar />
+      </div>
     </div>
   );
 }
